@@ -107,7 +107,7 @@
 
 \title{Stellar Dynamics and Galaxies}
 \author{Jacob Pilawa}
-\date{Spring 2021}
+\date{Fall 2021}
 
 \begin{document}
 
@@ -1748,5 +1748,697 @@ Really low surface densities have almost \textbf{NO} $H_2$. Less molecular gas i
     \caption{SUMMARY of today.}
     \label{fig:summmmm}
 \end{figure}
+
+
+
+
+\section{September 29, 2021: The Circumgalactic Medium}
+
+
+This probably won't be on the final, nor will there be homework on this! 
+
+The first paper; 1956, ApJ, 124, 20S. Lyman Spitzer speculates ``the possibility of a galactic corona.'' The idea was that there must be a medium that supports the gas cloud showing absorption lines far out in the Galaxy! This corona should be really hot, near $10^4 - 10^6$ K. See reviews by \textbf{Putman, Peek, Joung (2012)} and \textbf{Tumlinson, Peeples, Werk, 2017}.
+
+If a galaxy is the size of a dime, the CGM is the size of the DM halo (about the size of a basketball).
+
+Metals in stars can get recycled to the ISM (and observed with gas phase metallicity), \textit{or} with inflows and outflows to the CGM, with recycling. This mixes everything together in the galaxy! 
+\subsection{History of CGM}
+
+\begin{itemize}
+    \item 1950s to 1960s: Concept of a galactic corona, disovery of NaI and CaII lines in hot star spectra.
+    \item 1980s - 2000s: Emerging effort ot study the CGM and IGM with QSO absorption lines out to $z\sim3$. The CGM/IGM gives rise to strong Ly$\alpha$, metal absorption lines and x-rays. 
+    \item 2010s: The installation of Cosmic Origins Spectrograph on HST.
+\end{itemize}
+
+\subsection{The Missing Baryons \& Where Are They}
+
+See: Persic and Salucci (1992), Fukugita (1998), Fukugita and Peebles (2004), Shull 2003, Bregman 2007, and Behroozi 2010.
+
+\begin{equation}
+    f_b = \frac{M(\text{stars, gas, dust})}{M_b}
+\end{equation}
+
+\begin{equation}
+    M_b = \frac{\Omega_{b}}{\Omega_{m}} M_{DM}
+\end{equation}
+
+\begin{equation}
+    \Omega_{b} = 0.0486, \text{ and } \Omega_{m} = 0.308 \text{ (from Planck 2015)}
+\end{equation}
+
+It turns out, we are missing a lot of baryons that we expect from $\Lambda$CDM. Turns out we are missing a lot of metals, too! The CGM can help explain this, maybe?
+
+\subsection{General GCM Properties}
+
+The CGM is incredibly diffuse, havivng number densities around $n \in [6\times 10^{-7}, 0.6] \text{cm}^{-3}$. We can plot this as a function of temperature in a  \textbf{phase diagram}.
+
+\subsection{Top 10 Observationally Derived Properties of the CGM (Jessica Werk)}
+
+\begin{itemize}
+    \item Large covering fraction of multi-phase ions (We can relate the column density to equivalent width through the curve-of-growth.)
+    \item Observations strongly hint that CGM gas is bound to the galaxy halo.
+    \item \textbf{The CGM gas contains a substantial fraction of baryons and metals, and its content is somehow modified by whatever process shuts down and fuels star formation in galaxies. The CGM phase structure and dominant physical processes are far from being solved, yet data support a complex shocking and mixing of gas within a galaxy virial radius and dominant processes that vary as a function of halo mass. }
+\end{itemize}
+
+\subsection{Curve of Growth}
+
+Relates column density to equivalent width, which have three parts. 
+
+\begin{itemize}
+    \item Linear regime with $\tau < 1$
+    \item Flat regime where width is insensitive, near $10 < \tau < \tau_{damp}$
+    \item Very steep regime where $N\propto W^2$ for larger than $\tau_{damp}$
+\end{itemize}
+
+\section{October 6, 2021: Chemical Evolution}
+
+\subsection{Chemical Evolution Outline}
+
+\begin{itemize}
+    \item Metallicity definition
+    \item Sources of heavy elements
+    \item Measuring metals
+    \item Chemical evolution models
+\end{itemize}
+
+\subsection{Terminology and Things}
+
+In most work, we see something like [X/H]. This means ``the number of atoms in X relative to the number of atoms in hydrogen, with the brackets mean relative to the sun. The most common example is [Fe/H]. This is:
+
+\begin{equation}
+    \text{[Fe/H]} = \log_{10} \left(\frac{N(Fe)}{N(H)}\right)_\star - \log_{10}\left(\frac{N(Fe)}{N(H)}\right)_\odot
+\end{equation}
+
+There are quantities called mass fractions, $X$, $Y$, and $Z$. $X$ is the mass fraction of hydrogen, $Y$ is the mass fraction of helium, and $Z$ is the mass fraction of metals. What this really means is:
+
+\begin{equation}
+    X = \frac{m_{hydrogen}}{m_{total}} = \frac{\rho_{hydrogen}}{\rho_{total}}
+\end{equation}
+
+By construction, $X+Y+Z = 1$. 
+
+Another example:
+
+\begin{equation}
+    \text{[M/H]} = \log_{10} \left(\frac{N(\text{metals})}{N(H)}\right)_\star - \log_{10}\left(\frac{N(Fe)}{N(H)}\right)_\odot
+\end{equation}
+
+We can re-write this:
+
+\begin{equation}
+    \text{[M/H]} = \log_{10} \left(\frac{n_m}{n_H}_\star / \frac{n_m}{n_H}_\odot\right) = \log_{10}\left(\frac{(Z/X)_\star}{(Z/X)_\odot}\right)
+\end{equation}
+
+
+In the Sun, we have:
+
+\begin{itemize}
+    \item $X_\odot$ = 0.734
+    \item $Y_\odot$ = 0.25
+    \item $Z_\odot$ = 0.016 (controversial -- helioseismology tension!)
+\end{itemize}
+
+\subsection{Solar Abundance Pattern}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.01.16 AM.png}
+    \caption{Solar abundance pattern. This is what you should think about when you talk about abundance patterns, but this is not constant for stars!}
+    \label{fig:solar_abundance}
+\end{figure}
+
+\subsection{Sources of Heavy Elements}
+
+Hydrogen, helium, and lithium are BBN elements.
+
+Stars return substaional fractions of their initial masses to the ISM at the end of their lifetimes through stellar winds and supernovae.
+
+\begin{itemize}
+    \item \textbf{Low mass stars} ($M<8M_\odot$): He, C, N, O ejected during AGB phase
+    \item \textbf{Massive stars} ($M>8M_\odot$): Produce more O and Mg compared to Fe. Enrich ISM via stellar winds and final explosions as core collapse (Type II) supernovae
+    \item Type Ia supernova: C/O white dwarf accretes material from a close companion and explodes once it reaches the Chandresekhar limiting mass. Produces mostly Fe and little O. 
+\end{itemize}
+
+Side note: Hydrogen burning stops, contracts, and inert helium core. Then you have hydrogen shell burning as it ascends RGB. Then helium flash stars the horizontal branch, burning helium in the core burning to C, O. Around the core, you have H burning shells. Then you run out of helium, the core is contracting but not burning. This is the AGB. Everytime its stable, you have same luminosity. Unstable is increasing luminosity. Temperature gradients are really steep and thus you have convection. Dredges up carbon and oxygen into the atmosphere, with winds kicking it off. It then becomes a white dwarf.
+
+\subsection{Neutron Capture Elements}
+
+Most heavy nuclei $(A>56)$ are formed by neutron addition onto Fe-peak elements, followed by beta decay. Beta is an electron or a positron. The neutron capture regime is $n > 10^{20}$ neutrons per centimeter cubed. Low density regime is $n < 10^{8}$. Anything between depends on other factors. Rapid process takes place in SN explosions, colliding neutron stars, BH/neutron star mergers, etc. S process mostly occurs in AGB stars and in massive stars in the He burning core and convective C-burning shell, just prior to SN explosion. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.20.30 AM.png}
+    \caption{R and S process. Rapid process takes place in SN explosions, colliding neutron stars, BH/neutron star mergers, etc. S process mostly occurs in AGB stars and in massive stars in the He burning core and convective C-burning shell, just prior to SN explosion. S process is responsible for about half of elements larger than iron. Decay timescale is about 15 minutes. }
+    \label{fig:R_S}
+\end{figure}
+
+\subsection{R vs. S Process Elements}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.24.20 AM.png}
+    \caption{}
+    \label{fig:rs_stability}
+\end{figure}
+
+\subsection{Metallicities of galaxies}
+
+You need high resolution spectra to resolve individual lines. Can also measure the temperature, gravity, and metallicity all at the same time. Can you do the same thing for an integrated population of stars? You can get a value, sure, but it will be luminosity weighted and thus dominated by the brightest stars.
+
+Also, doppler broadening in galaxies makes individual measurements impossible. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.30.19 AM.png}
+    \caption{For a star forming galaxy, you measure metallicity from an HII region (equivalent width of emission lines, mostly)! This is a tracer of current metallicity. For quiescent galaxies, we have to measure \textbf{stellar metallicities}, not \textbf{gas-phase metallicities}. Generally measure Mg and Fe abundance. \textbf{Reflects ISM metalicities at times the stars were formed. }}
+    \label{fig:metallicities_of_galaxies}
+\end{figure}
+
+\subsection{Gas-phase metallicities, direct T method}
+
+You have an optically-thin plasma in a high temperature HII region. The takeaway of the below figure, is: In HII regions, the OIII and NII lines are banged on by other elements. This collisionally excites the plasma, which is great because that's temperature! Thus measuring the temperature gives us the oxygen atoms, and then we can get the metallicity.
+
+How do we get temperature? For OIII specifically, if we can measure ratios of transitions (aka Boltzmann distribution measurements) at specific places, there are places sensitive only to temperature. In practice, many of these lines are weak and hard to measurem (like the 4360 line compared to the 5007 line). 
+
+Instead, you measure the 5007 line, and then something else like H$\beta$, giving:
+
+\begin{equation}
+    OIII / H\beta \propto n(O) / n(H) \times T^{0.5} \exp{(-28764/T_e)}
+\end{equation}
+
+which is unfortuantely dependent on density, which we must assume! This figure shows this phenomenon:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.50.13 AM.png}
+    \caption{See above.}
+    \label{fig:see}
+\end{figure}
+
+We get around this with the \textbf{strong line method}:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.50.51 AM.png}
+    \caption{Combination of strong lines correlated with oxygen abundance and can be used. Really dangerous though because calibration has lots of scatter. }
+    \label{fig:strong_Line_method}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.53.21 AM.png}
+    \caption{Direct and indirect method comparison. }
+    \label{fig:direct_v_indirect}
+\end{figure}
+
+\subsection{Quasar Absorption Line Studies}
+
+Light travels through the medium at many different redshifts, and thus we can measure metallicities of gas patches. This is what Lyman-alpha systems (damped) are:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.55.26 AM.png}
+    \caption{QSO damped lyman-alpha system. The amount of damping is due to the metal in the gas. Then do photo-ionization modeling. }
+    \label{fig:lyman_alpha}
+\end{figure}
+
+We can also get metals, too:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-06 at 10.59.32 AM.png}
+    \caption{We can model other lines which are much weaker, but we know redshift from lyman-alpha.}
+    \label{fig:lyman_alpha_systems_metals}
+\end{figure}
+
+
+\section{October 8, 2021: Chemical Evolution Continued}
+
+\subsection{Damped Lyman Alpha Systems}
+
+It might be called this because of radiation damping OR because of the shape of the wings. 
+
+\subsection{Chemical Evolution Models, ingredients}
+
+\begin{itemize}
+    \item Initial conditions
+    \begin{itemize}
+        \item Pre-enriched or primordial
+        \item Closed box or open system
+    \end{itemize}
+    \item Birthrate function $B(M,t) = \psi(t) \xi(M)$
+    \begin{itemize}
+        \item Star formation rate history: $\psi(t) \propto \sigma^{n}$ (KS relation)
+        \item Stellar initial mass function $\xi(m)$
+    \end{itemize}
+    \item Stellar yields
+    \begin{itemize}
+        \item Core collapse SN yields depend on stellar mass and metallicity
+    \end{itemize}
+\end{itemize}
+
+\subsection{Closed Box Model Chemical Evolution}
+
+Let's first define some variables. We have:
+
+\begin{itemize}
+    \item $\psi(t)$: SFR in solar masses per year
+    \item $M_{g}(t)$ : gas mass at time $t$
+    \item $M_s(t)$: Stellar mass at time $t$
+    \item $M_t(t) = M_g(t) + M_s(t)$: Total mass at time $t$ which is constant
+    \item $Z(t)$: fraction of metals in the gas
+\end{itemize}
+
+Now, let's discuss initial conditions:
+
+\begin{itemize}
+    \item At $t=0$, $M_t(0) = M_g(0)$ \textbf{and} $Z(0) = 0$.
+\end{itemize}
+
+We have a few other assumptions:
+
+\begin{itemize}
+    \item No gas flow in or out of the system: $\frac{\mathrm{d}M_t}{\mathrm{d}t} = 0$.
+    \item Instantaneous recycling approximation -- no delay time between enrichment and recycling to gas reservoir. 
+    \item We basically have an IMF with two mass bins: low mass stars keep stellar mass locked up, high mass stars return the mass to the system. (Recycling of material comes \textbf{only} from high mass stars. Low mass stars retain the mass).
+\end{itemize}
+
+We can calculate the stellar mass at time $t$:
+
+\begin{equation}
+    M_s(t) = \int_0^t \alpha \psi(t^\prime)\mathrm{d}t^\prime
+\end{equation}
+
+where $\alpha$ defines the fraction of mass in long-lived stars. Another way to write this same equation:
+
+\begin{equation}
+    \frac{\mathrm{d}M_t}{\mathrm{d}t} = \alpha \psi
+\end{equation}
+
+
+We can write down:
+
+\begin{equation}
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} = \underbrace{-Z \psi}_\text{removal of metals from system} + \underbrace{\left(1-\alpha\right) Z\psi}_\text{contribution to metals from high mass stars (enrichment)} + \underbrace{q \psi}_\text{}
+\end{equation}
+
+where $q \equiv \frac{\text{metals returned}}{\text{total mass}}$ ratio of mass in metals returned to that of the total mass at a given time. In other words, at some time $t$ massive stars are returning metals to the system, which has some total mass at time $t$.
+
+We can re-write the left hand side of the equation above:
+
+\begin{equation}
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} = q\psi - \alpha Z\psi = \psi\left(q-\alpha Z\right)
+\end{equation}
+
+Now, we are going to use a little black magic to expand this...
+
+Let's start with \textbf{Equation 1}:
+
+\begin{equation}
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}M_s} = \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} \frac{\mathrm{d}t}{\mathrm{d}M_{s}} = \psi(q-\alpha Z)\frac{1}{\alpha \psi} = \frac{q}{\alpha} - Z = y-Z
+\end{equation}
+
+Here, we define $y\equiv \frac{q}{\alpha}$. We can now define \textbf{Equation 2}, noting that $\mathrm{d}M_g = - \mathrm{d}M_s$:
+
+\begin{equation}
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}M_s} = M_g \frac{\mathrm{d} Z}{\mathrm{d} M_{s}} + Z \frac{\mathrm{d}M_{g}}{\mathrm{d}M_s} = -M_g \frac{\mathrm{d}Z}{\mathrm{d}M_g} - Z = - \frac{\mathrm{d}Z}{\mathrm{d}\ln{M_g}} - Z
+\end{equation}
+
+
+Let's equate \textbf{Equation 1} and \textbf{Equation 2}:
+
+\begin{equation}
+    y-Z = - \frac{\mathrm{d}Z}{\mathrm{d}\ln{M_g}} - Z
+\end{equation}
+
+Let's simplify:
+
+\begin{equation}
+    y = - \frac{\mathrm{d}Z}{\mathrm{d}\ln{M_g}}
+\end{equation}
+
+Integrate:
+
+\begin{equation}
+    \int_0^t \mathrm{d} Z = -y \int_0^t \mathrm{d}\ln{M_g}
+\end{equation}
+
+\begin{equation}
+    Z(t) - Z(0) = -y\left(\ln{M_g(t)} - \ln{M_g(0)}\right)
+\end{equation}
+
+\begin{equation}
+    \boxed{Z(t) = -y \ln{\frac{M_g(t)}{M_t}} = - y \ln{F_g(t)}}
+\end{equation}
+
+where $F_g$ is the gas fraction at time $t$. 
+
+We end up wanting to observe the metallicity distribution $\frac{\mathrm{d}N}{\mathrm{d}Z}$. 
+
+\subsection{The G-Dwarf Problem: THIS IS PRE-LIM PRIME}
+
+See Dauphas+2005. G-dwarf dominates the solar neighborhood (because they are easy to observe, by number it's actually the M-dwarfs). The crux of the problem is the low metallicity tail that is totally unfit! So, what's the solution to the closed box model?
+
+The main issue is that we are not in a closed box! The big reason it fails is that we have multiple yields, we have recycling (not instantaneous), and inflow/outflow more broadly speaking and not immediately recycling back into the disk. \textbf{The closed box model needs inflows and outflows, as well as non-instantaneous timescales}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.26.28 AM.png}
+    \caption{CB model does not reproduce what is observed!}
+    \label{fig:g_dwarf_problem}
+\end{figure}
+
+\subsection{Mass-metallicity relation}
+
+We can also look at the mass-metallicity relation. The closed box model fails at reproducing the observed trend. The trend is because, as we change galaxy mass, outflow and inflow are different as a function of mass. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.34.28 AM.png}
+    \caption{CB model does not reproduce what is observed for mass-metallicity relation as well!}
+    \label{fig:mm_cb}
+\end{figure}
+
+\subsection{Leaky Box model}
+
+Modifying the instantaneous recycling approximation, as well as adding in inflows and outflows, and we better fit the data. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.42.51 AM.png}
+    \caption{Leaky box better fits the data!}
+    \label{fig:leaky_box_model}
+\end{figure}
+
+\subsection{Gas Accretion over Time}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.46.59 AM.png}
+    \caption{Gas accretion slows in the nearby Universe. }
+    \label{fig:gasacc}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.49.31 AM.png}
+    \caption{Cold mode accretion.}
+    \label{fig:cold_mode_acc}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.52.12 AM.png}
+    \caption{Hot mode accretion goes down with low halo masses.}
+    \label{fig:coldvshot_accre}
+\end{figure}
+
+\subsection{Observational Constraints on Infall}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.54.33 AM.png}
+    \caption{Densities are low, temperatures are low, and thus we have a hard time observing inflows. }
+    \label{fig:inflow_constraints}
+\end{figure}
+
+\subsection{Lyman Alpha Blobs}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 10.58.30 AM.png}
+    \caption{La blobs. Best evidence for inflow.}
+    \label{fig:Lymanalpha_blobs}
+\end{figure}
+
+\subsection{Milky Way Clouds?}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-08 at 11.00.55 AM.png}
+    \caption{What the heck are these high velocity clouds?}
+    \label{fig:hv_clouds}
+\end{figure}
+
+
+\section{October 13, 2021: Chemical Evolution and DM Halos}
+
+\subsection{CC SN Stellar Yields Depend on the Stellar Mass}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 9.45.24 AM.png}
+    \caption{CC SN.}
+    \label{fig:CCSn}
+\end{figure}
+
+\subsection{CC SN Stellar Yields Depend on the Stellar Metallicity}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 9.47.32 AM.png}
+    \caption{Nomoto models are common.}
+    \label{fig:Nomoto}
+\end{figure}
+
+\subsection{Type Ia Supernvoa Delay Time Distribution}
+
+How many go off as a function of when the star formation episode happened. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 9.49.40 AM.png}
+    \caption{Delay time distributions.}
+    \label{fig:DTD}
+\end{figure}
+
+\subsection{R-process Elements}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 9.51.39 AM.png}
+    \caption{These were thought to track Ia SN. Eu tracks more closely with Mg, which we did not predict. \textbf{We don't know the delay time distribution of neutron star mergers at all which give uncertainty}.}
+    \label{fig:Rprocesselements}
+\end{figure}
+
+\subsection{PRELIMMABLE: Core-Collapse vs. Type Ia Supernovae Enrichment}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 9.54.53 AM.png}
+    \caption{Type II SN go off and produce alpha elements (Mg, Oxygen, Carbon, etc) and not Fe. If you look at a star formation episode shortly after it happens, you find a high alpha sequence (enrichment relative to iron). This is because the Ia's have no happened yet and thus have not produced iron. The first Ia goes off a few hundred million years later, and we enrich the ISM with iron. Effectively, this brings down the alpha-to-iron ratio. }
+    \label{fig:FeAlphaEnrichment}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 9.57.30 AM.png}
+    \caption{Initial plateau: ``high-alpha sequence.'' Turnover: ``knee.'' Secondary plateau. This is a diagram that basically traces the various enrichments for Type Ia vs. Type II SN. To get high alpha sequence, we need CCSN. This creates a high alpha population into the ISM. At some time, ISM gets enriched with iron and we have a drop-off in the ratio. Then, we settle in equilibrium. Various aspects of this diagram are sensitive to various SPS parameters. More high mass stars means more CC SN and thus high plateau. The exact shape and slope, location, etc., are set by the balance of star formation rate and inflow/outflow.  }
+    \label{fig:AlphaFeAbundanceEnrichment}
+\end{figure}
+
+\subsection{Examples - Effect of IMF on Alpha-Fe and Fe-H Diagram}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.03.33 AM.png}
+    \caption{Cyan is more supernova because more high-mass stars.  }
+    \label{fig:Examples1}
+\end{figure}
+
+\subsection{Examples - Effect of Star Formation on Alpha-Fe and Fe-H Diagram}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.04.44 AM.png}
+    \caption{Outflows create spread at the down-turn.   }
+    \label{fig:Examples2}
+\end{figure}
+
+\subsection{Examples - Effect of Inflow and Outflow on Alpha-Fe and Fe-H Diagram}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.07.32 AM.png}
+    \caption{Effects of inflows and outflows. }
+    \label{fig:Examples23}
+\end{figure}
+
+\subsection{The Dark Matter Rap}
+
+\subsection{Cold, Warm DM Power Spectrum}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.21.42 AM.png}
+    \caption{Characteristic distance scale (x) vs power (y) on sky. Solid line is power spectrum for cold dark matter. We mean by ``cold'': no thermal component. It is just a gravitationally interacting point mass, more or less. The energies corresponding to intrinsic kinetic energy. Warm dark matter has a turnover in the power structure, and you lose small scale structure. }
+    \label{fig:DarkMatterPowerSpectrum}
+\end{figure}
+
+\subsection{Rotation Curves}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.25.07 AM.png}
+    \caption{Vera Rubin!}
+    \label{fig:Vera}
+\end{figure}
+
+\subsection{Probes for Dark Matter Halos and Halo Shapes}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.27.20 AM.png}
+    \caption{Prolate and oblate haloes. Things tend to be a bit more prolate, by the way. Typical shape: a : b : c = 1 : 0.8 : 0.65}
+    \label{fig:DM_halo_shapes}
+\end{figure}
+
+\subsection{Dark Matter Halo: A universal density profile}
+
+The NFW Profile is given by:
+
+\begin{equation}
+    \rho(r) = \frac{\rho_s}{\frac{r}{r_s}\left(1 + \frac{r}{r_2}\right)^2}
+\end{equation}
+
+where $r_s$ is the scale radius of the halo and $\rho_s$ is the density at $r_s$. 
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.28.42 AM.png}
+    \caption{NFW Profile.}
+    \label{fig:NFW}
+\end{figure}
+
+In practice, however, most people talk about the virial radius. This is the effective radius if the halo were a sphere. If we define $r_{vir}$ and $c_{vir} = \frac{r_{vir}}{r_s}$ is the concentration parameter:
+
+\begin{equation}
+    \rho_s = \rho_c \delta_{c} \text{, where } \rho_c = \frac{3 H^2(z)}{8\pi G}
+\end{equation}
+
+and where $\delta_c$ is the characteristic overdensity. Typically we pick something like $200$ or $500$ times the overdensity. 
+
+\subsection{Halos which form earlier are more concentrated}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.38.12 AM.png}
+    \caption{Late halos are less dense, as a result of looking at simulations. The characteristic overdensity scales well with the formation epoch. The more concentrated ones tend to be less massive. More massive galaxies have lower dark matter concentration parameters. }
+    \label{fig:NFW_Over_Time}
+\end{figure}
+
+
+\subsection{Mergers of Dark Matter Halos}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.40.32 AM.png}
+    \caption{Merger trees. Read from bottom to top moving backward in time. }
+    \label{fig:Merger_Trees}
+\end{figure}
+
+\subsection{Halo growth; mass accretion histories}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.43.20 AM.png}
+    \caption{Assembling more DM over time. More massive haloes form later than low mass halos. }
+    \label{fig:masses_}
+\end{figure}
+
+\subsection{Halo growth; concentration paramater histories}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.44.54 AM.png}
+    \caption{Same thing can be said for concentration index.  THis has to do with the fact that they accrete more stuff. Low mass are more simple and thus have simple merging histories.}
+    \label{fig:c_parmas}
+\end{figure}
+
+\subsection{Dark Matter Halo Mergers: A Universal Fitting Form}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.47.49 AM.png}
+    \caption{Immensely important. }
+    \label{fig:chungpeimakesanappearance}
+\end{figure}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.48.23 AM.png}
+    \caption{Immensely important. More!}
+    \label{fig:chungpeimakesanappearance_2}
+\end{figure}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.49.08 AM.png}
+    \caption{Immensely important. More!}
+    \label{fig:chungpeimakesanappearance_3}
+\end{figure}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.49.36 AM.png}
+    \caption{Barley changes.}
+    \label{fig:chungpeimakesanappearance_4}
+\end{figure}
+
+\subsection{Problems with Cold Dark Matter}
+
+\begin{itemize}
+    \item The missing satellite problem
+    \item Cusp-core problem
+    \item Halos are triaxial, why don't we see evidence for that?
+    \item Why are there so many pure disk galaxies?
+    \item Too few galaxies in voids?
+\end{itemize}
+
+\subsection{Missing Satellites Problem}
+
+There are tons of tiny little halos that are predicted. Where are they?
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.52.27 AM.png}
+    \caption{Where the hell are the satellites?}
+    \label{fig:missing_satellites}
+\end{figure}
+
+Maybe dark matter isn't cold?
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.54.20 AM.png}
+    \caption{Maybe the turnover is due to a warm dark matter turn over? Warm models predict different small DM halos. Probably least likely solution.}
+    \label{fig:warmdm}
+\end{figure}
+
+\subsection{Core vs. Cusp Problem}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.55.50 AM.png}
+    \caption{NFW is universal, but we observe central regions of nearly constant mass density. This has been used against universal mass profiles. Data appeared to have issues, but problem still exists. }
+    \label{fig:core_cusp1}
+\end{figure}
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 10.56.13 AM.png}
+    \caption{Proposed solution: baryonic effects (primarily SN feedback) can alter the density profile of law-mass dark matter halos. This is called ``unbinding.'' Probably the best explanation right now.  }
+    \label{fig:core_cusp2}
+\end{figure}
+
+\subsection{Summary of DM Halos }
+
+\begin{figure}
+    \centering
+\includegraphics[width=0.66\textwidth]{figs/Screen Shot 2021-10-13 at 11.00.43 AM.png}
+    \caption{Summary of DM Halos!  }
+    \label{fig:DM_summary}
+\end{figure}
+
 
 \end{document}
